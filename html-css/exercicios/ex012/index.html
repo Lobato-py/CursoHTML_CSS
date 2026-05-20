@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeos</title>
+    <title>Vídeos com HTML5</title>
 </head>
 <body>
-    
+    <h1>Inserindo vídeo hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <!--Lembre-se, porque funcionou em um navegador, pode não funcionar em todos, tenha sempre opções.-->
+    <video width="500" poster="imagens/snupi.png" controls> <!--Poster faz a thumb do vídeo-->
+        <!--o width serve aqui para diminuir o tamanho do vídeo, lembre-se de priorizar tamanho do arquivo, não qualidade. Não adianta nada pegar um vídeo 4k se ele não vai ficar pro tamanho de um vídeo 4k.-->
+        <source src="midia/barquinho.mp4" type="video/mp4">
+        <source src="midia/Barquinhoweb.mp4" type="video/mp4">
+        <source src="midia/Barquinhoweb2.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <!--Vídeos hospedados localmente são MUITO pesados, e podem custar MUITO!-->
+    <!--Tomar cuidado sempre com isso, cada download feito pelo usuário que acessou seu site, vai consumir banda, e isso se torna custoso a partir do momento que você usa serviços de hosting para seu site.-->
+
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8wvjyNFF5hk?si=ZtcPPPukC_-80IXF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--OPÇÃO: Usar o Vimeo, tem suas vantagens e desvantagens. A Vantagem é a qualidade do vídeo em seu site, a desvantagem é que seu algoritmo não é tão bom quanto o do youtube.-->
+    <h1>Inserindo vídeos do Vímeo</h1>
+    <iframe src="https://player.vimeo.com/video/257399106?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="ANIMATION REEL"></iframe>
 </body>
 </html>
