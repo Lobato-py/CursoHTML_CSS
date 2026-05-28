@@ -6,7 +6,7 @@
     <title>Fontes em CSS</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
             /* o CSS tenta primeiro a Arial, caso o dispositivio não tenha, ele tenta as seguintes. */
             /* Pesquisar depois: CSS Web Safe Fonts */
 
@@ -17,8 +17,29 @@
             /* em(mais comum), ex, rem, vw, vh, % */
             /* 16px geralmente = 1em */
 
-            font-size: 1em;
+            /* font-size: 1em; */
             /* normalmente o tamanho das fontes vem em 16px */
+            /* font-weight: normal; */
+            /* lighter, normal, bold, bolder */
+            /* a maioria das fontes NÃO tem todas essas variações */
+            /* font-style: normal; */
+            /* normal, italic, oblique */
+            /* text-decoration: underline; */
+        }
+
+        h1{
+            /* font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; */
+            /* shorthand font */
+            /* ordem: font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2{
+            font: bold 2em 'Work sans', sans-serif;
+            /* você pode fazer o shorthand e não por um componente, porém que siga a mesma ordem ainda */
         }
     </style>
 </head>
