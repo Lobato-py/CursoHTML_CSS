@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo elemento
+            > = children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* pseudo-classe */
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* pseudo-classe */
+        a:active{
+            color: yellow;
+        }
+
+        .especial{
+            background-color: rgb(255, 118, 118);
+        }
+
+        .especial::before{
+            content: ' ⇨';
+        }
+
+        /* PSEUDO-ELEMENTO = "::" */
+        .especial::after{
+            content: ' ⇦';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Lobato-py/CursoHTML_CSS" target="_blank">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/html5-css3-modulo-2-vip/aulas/modulo-2/modulos/capitulo-15-aula-04-css-pseudo-element/" target="_blank" class="especial">Site do Curso em vídeo</a></li>
+    </ul>
+</body>
+</html>
